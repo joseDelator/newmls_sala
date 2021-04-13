@@ -1,10 +1,10 @@
 import Head from 'next/head'
-import Postnum from './componets/Numofpostions'
+import Postnum from '../componets/Numofpostions'
 import Axios from  'axios'
-import Clubsala from './componets/clubsala'
-import SalaGrowth from './componets/salarygrowth'
-import Topsala from './componets/Topsala'
-import Sala_by_post from './componets/sala_by_position'
+
+import SalaGrowth from '../componets/salarygrowth'
+import Topsala from '../componets/Topsala'
+import Sala_by_post from '../componets/sala_by_position'
 export default function Home( {numbypositions, clubsala, topten, salarybyposition}) {
  
   return (
@@ -17,7 +17,7 @@ export default function Home( {numbypositions, clubsala, topten, salarybypositio
         <link rel="icon" href="/logo512.png" />
       </Head>
 
-      <Clubsala clubs = {clubsala}/>
+  
       <Topsala player={topten}/>
       <Postnum clubs = {numbypositions} />
       <SalaGrowth/>
