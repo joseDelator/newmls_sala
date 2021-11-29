@@ -9,13 +9,14 @@ export default function Home( {numbypositions, clubsala, topten, salarybypositio
  
   return (
     <div>
+       <Head>
+      <title>MLs Salaries 2017</title>
+        <link rel="icon" href="/logo512.png" />
+      </Head>
 
     <h1>MLS Salary Data from   2017</h1>
     <div  className= 'grid_container'>
-      <Head>
-        <title>MLs Salaries 2017</title>
-        <link rel="icon" href="/logo512.png" />
-      </Head>
+   
 
       <Clubsala clubs = {clubsala}/>
       <Topsala player={topten}/>

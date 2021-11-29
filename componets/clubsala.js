@@ -5,7 +5,7 @@ import {Bar} from 'react-chartjs-2';
 
 
 export default ({clubs}) => ({
-  displayName: 'BarExample',
+ 
   render() {
     return (
       <div className = "Bar">
